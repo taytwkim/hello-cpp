@@ -20,6 +20,12 @@ Also, on macOS, `g++` may actually invoke Clang (the `g++` command can just be a
 
 If we want actual GCC’s `g++`, we can install GCC separately (via Homebrew), and then use a versioned command like `g++-15` (or whatever version we installed).
 
+When we run `clang++` or `g++`, the command acts as a driver that typically runs the whole pipeline in order. 
+
+It preprocesses our source (#include, macros), compiles it, assembles it into an object file, and then links the object file with the required libraries to produce an executable.
+
+So the order is: preprocessor → compiler → assembler → linker.
+
 ## 2. Choosing a Language Standard
 
 The ISO committee releases new C++ standards on a roughly 3-year cycle (C++14, C++17, C++20, C++23).
