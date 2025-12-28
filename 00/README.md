@@ -22,7 +22,7 @@ If we want actual GCC’s `g++`, we can install GCC separately (via Homebrew), a
 
 When we run `clang++` or `g++`, the command acts as a driver that typically runs the whole pipeline in order. 
 
-It preprocesses our source (#include, macros), compiles it, assembles it into an object file, and then links the object file with the required libraries to produce an executable.
+It preprocesses our source (`#include`, macros), compiles it, assembles it into an object file, and then links the object file with the required libraries to produce an executable.
 
 So the order is: preprocessor → compiler → assembler → linker.
 
