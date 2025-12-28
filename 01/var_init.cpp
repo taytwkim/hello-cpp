@@ -1,8 +1,9 @@
 // Chapter 1: C++ Basics
 // Date: 2025-12-28
 // Initializing Variables in C++
-// Compile: clang++ init.cpp -o init
+// Compile: clang++ var_init.cpp -o var_init
 
+#include <iostream>
 #include <vector>
 
 int main() {
@@ -39,9 +40,14 @@ int main() {
     
     // ===== Narrowing Conversions =====
     // One characteristic of list-initialization is that it prevents narrowing conversions.
-    int w1 { 4.5 }; // compile error: list-init does not allow narrowing conversion
+    
+    // int w1 { 4.5 }; // compile error: list-init does not allow narrowing conversion
     int w2 = 4.5;   // compiles: w2 copy-initialized to value 4
     int w3 (4.5);   // compiles: w3 direct-initialized to value 4
+
+    // std::cout << "w1: " << w1 << "\n";
+    std::cout << "w2: " << w2 << "\n";
+    std::cout << "w3: " << w3 << "\n";
 
     // ===== maybe_unused attribute =====
     // Normally, the compiler will complain if we declare a variable and never use it.

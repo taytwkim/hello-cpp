@@ -6,9 +6,7 @@
 #include <iostream>
 
 int main () {
-    // we use cout and cin, and the insertion (<<) and extractor (>>) operators.
-
-    // Note that here, a new line character is not needed as user will press enter after input.
+    // A new line character is not needed here as user will press enter after input.
     std::cout << "Enter a number: ";
     
     int x;
