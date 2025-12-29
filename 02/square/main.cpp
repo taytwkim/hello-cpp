@@ -5,7 +5,7 @@
 /* Why use a header guard?
  * 
  * Without a header guard, this code will fail to compile.
- * This is wave.h includes square.h, so this file ends up including square.h twice.
+ * This is because wave.h includes square.h, so this file ends up including square.h twice.
  * To prevent accidents like this, we use a header guard to include headers only once.
  * 
  * Note that to illustrate a point, getSquaredSides is defined within the header file, which we should gnerally avoid.

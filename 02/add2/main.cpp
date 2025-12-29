@@ -5,7 +5,7 @@
 
 #include <iostream>
 
-// This function is define in a different file, but we still need to declare it here in order to use it.
+// This function is defined in a different file, but we still need to declare it here in order to use it.
 int add(int x, int y);
 
 int main() {

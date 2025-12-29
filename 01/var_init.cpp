@@ -21,7 +21,7 @@ int main() {
     int b = 5;
     
     // Direct initialization
-    // Direct initialization was initially introduced to allow for more efficient initialization of complex objects
+    // Direct initialization was initially introduced to allow for more efficient initialization of complex objects.
     // Direct initialization had fallen out of favor in modern C++, largely due to being superseded by direct-list-initialization.
     int c (6);
 
@@ -33,7 +33,7 @@ int main() {
     int d {7};
 
     // List initialization also provides a way to initialize objects with a list of values rather than a single value.
-    std::vector<int> e{3, 7}; // [3, 7]
+    std::vector<int> e {3, 7}; // [3, 7]
 
     // Value initialization (C++11 and later)
     int f {}; // initialized to zero instead of indeterminate value.

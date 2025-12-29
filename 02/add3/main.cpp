@@ -3,8 +3,8 @@
 // Header File
 // Compile: clang++ main.cpp add.cpp -o add
 
-// brackets <> are for header files that we did not write
-// quotes "" are for header files that we wrote 
+// Brackets <> are for header files that we did not write
+// Double quotes "" are for header files that we wrote 
 #include <iostream> 
 #include "add.h"
 
