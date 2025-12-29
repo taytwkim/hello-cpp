@@ -1,4 +1,4 @@
-# hello-cpp
+# Hello C++
 
 I'm trying to learn C++
 
@@ -13,3 +13,5 @@ I'm trying to learn C++
   * Namespaces
   * Preprocessors (macros)
   * Header files and header guards
+* Chapter 3: Debugging C++ Programs
+  * Using a debugger
