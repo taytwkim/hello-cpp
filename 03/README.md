@@ -41,6 +41,10 @@ Many debuggers also support watchpoints (data breakpoints), which pause executio
 
 **Local Watches**: Because inspecting the value of local variables inside a function is common while debugging, many debuggers will offer some way to quickly watch the value of all local variables in scope.
 
+### Call Stack
+
+The debugger often provides a debugger that shows the current call stack.
+
 ## Using LLDB on CLI
 
 On macOS, LLDB is the "default" debugger.
