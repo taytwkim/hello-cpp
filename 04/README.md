@@ -1,5 +1,12 @@
 # Fundamental Data Types
 
+## Code
+* `type.cpp`: `typeof` operator.
+* `size.cpp`: Fixed-width integers (e.g., `std::int8_t`) and `size_t`.
+* `bool.cpp`: Printing boolean values to `std::cout`.
+
+## Notes
+
 ### Memory Address
 
 In modern computers, each memory address holds 1 byte of data. So each byte (not each bit) gets its own memory address.
