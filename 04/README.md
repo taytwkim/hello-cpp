@@ -34,6 +34,20 @@ We can use the `sizeof` operator to find the size of each type (can vary by mach
 
 By default, integers in C++ are signed, which means the sign is stored as part of the value. Therefore, a signed integer can hold both positive and negative numbers (and 0).
 
-Because one bit is used to indicate sign, the values that can be represented by an n-bit signed integer will be `-2^(n-1) ~ 2^(n-1)`.
+Because one bit is used to indicate sign, the values that can be represented by an n-bit signed integer will be `-2^(n-1) ~ 2^(n-1)-1`.
 
 Assigning values that are not covered in this range is called an overflow and will result in undefined behavior.
+
+### Unsigned Integers
+
+Unsigned integers are integers that can only hold non-negative whole numbers.
+
+We can use the `unsigned` keyword to define an unsigned integer.
+
+An n-bit unsigned variable has a range of `0 to 2^n-1`.
+
+Like signed integers, assigning values out of range can lead to overflow and undefined behaviors.
+
+Generally, unsigned integers should be avoided because they are more error prone. 
+
+However, they may be needed in use cases like bit manipulation, encryption, and so on.
