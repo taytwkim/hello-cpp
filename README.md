@@ -1,4 +1,4 @@
-# Hello C++
+# 👋 Hello C++
 
 I'm trying to learn C++
 
@@ -15,3 +15,4 @@ I'm trying to learn C++
   * Header files and header guards
 * Chapter 3: Debugging C++ Programs
   * Using a debugger
+* Chapter 4: Fundamental Data Types

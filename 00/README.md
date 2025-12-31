@@ -20,6 +20,8 @@ Also, on macOS, `g++` may actually invoke Clang (the `g++` command can just be a
 
 If we want actual GCC’s `g++`, we can install GCC separately (via Homebrew), and then use a versioned command like `g++-15` (or whatever version we installed).
 
+Instead, we can use `c++`, which is the generic C++ compiler driver. It resolves to the system’s default C++ toolchain (so `clang++` on macOS). Sticking to `c++` is a nice way to keep scripts and Makefiles portable across machines.
+
 When we run `clang++` or `g++`, the command acts as a driver that typically runs the whole pipeline in order. 
 
 It preprocesses our source (`#include`, macros), compiles it, assembles it into an object file, and then links the object file with the required libraries to produce an executable.
