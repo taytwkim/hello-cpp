@@ -1,11 +1,12 @@
 // Chapter 4: Fundamental Data Types
 // Date: 2025-12-30
-// Printing Boolean Values to std::cout
+// Booleans
 // Compile: clang++ bool.cpp -o bool
 
 #include <iostream>
 
-int main(){
+int main()
+{
     // This will print 0 or 1 instead of "true" or "false"
     std::cout << true << '\n';
     std::cout << false << '\n';

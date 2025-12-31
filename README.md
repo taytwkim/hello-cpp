@@ -1,13 +1,15 @@
 # 👋 Hello C++
 
-I'm trying to learn C++
+I'm trying to learn C++.
+
+For the most part, I'm following along this [tutorial](https://www.learncpp.com/).
 
 ## Table of Contents
 * Chapter 0: Introduction / Getting Started
 * Chapter 1: C++ Basics
   * Hello world
   * IO stream (`std::cout`, `std::cin`)
-  * Initialization forms
+  * Initializing variables (e.g., direct initialization, list initialization, ...)
 * Chapter 2: C++ Basics: Functions and Files
   * Forward delcarations
   * Namespaces
@@ -19,3 +21,5 @@ I'm trying to learn C++
   * Object sizes and the `sizeof` operator
   * Signed and unsigned integers
   * Fixed-width integers (e.g., `std::int8_t`, `std::uint8_t`) and `size_t`
+  * Floating point numbers and booleans
+  * Implicit and explicit type conversions (`static_cast`)

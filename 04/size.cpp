@@ -6,12 +6,13 @@
 #include <cstdint>    // for fixed-width integers
 #include <iostream>
 
-int main() {
-    std::int32_t x { 32767 }; // x is always a 32-bit integer
-    x = x + 1;                // so 32768 will always fit (will be an overflow if int is 16 bits)
+int main()
+{
+    std::int32_t x { 32767 };   // x is always a 32-bit integer
+    x = x + 1;                  // so 32768 will always fit (will be an overflow if int is 16 bits)
     std::cout << x << "\n\n";
     
-    std::int8_t y { 65 };     // initialize 8-bit integral type with value 65
+    std::int8_t y { 65 };       // initialize 8-bit integral type with value 65
     std::cout << y << "\n\n";   // You're probably expecting this to print 65, but it will print 'A'
 
     // fast and least integral types
