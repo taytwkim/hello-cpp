@@ -18,3 +18,4 @@ I'm trying to learn C++
 * Chapter 4: Fundamental Data Types
   * Object sizes and the `sizeof` operator
   * Signed and unsigned integers
+  * Fixed-width integers (e.g., `std::int8_t`, `std::uint8_t`) and `size_t`
