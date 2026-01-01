@@ -1,7 +1,7 @@
 # Fundamental Data Types
 
 ## Code
-* `type.cpp`: `typeof` operator.
+* `type.cpp`: The `typeof` operator.
 * `size.cpp`: Fixed-width integers (e.g., `std::int8_t`) and `size_t`.
 * `float.cpp`: Floating point numbers.
 * `bool.cpp`: Printing boolean values to `std::cout`.
@@ -65,7 +65,7 @@ We can use the `unsigned` keyword to define an unsigned integer.
 
 An n-bit unsigned variable has a range of `0 to 2^n-1`.
 
-Like signed integers, assigning values out of range to an unsigned integer can lead to an overflow.
+Like signed integers, assigning values out of range can lead to an overflow.
 
 An unsigned integer will "wrap around" (e.g., 280 wil wrap around and become 24, since 280 % 256 = 24).
 
@@ -75,11 +75,11 @@ However, they may be helpful in special use cases like bit manipulation, encrypt
 
 ### Float and Double
 
-In most machines, `float` is 4 bytes, `double` is 8 bytes.
+In most machines, `float` is 4 bytes and `double` is 8 bytes.
 
-`double` is generally preferred over `float`, as it has a higher precision.
+`double` is generally preferred over `float` as it has higher precision.
 
-Be careful when comparing floating point numbers - there can be precision issues (e.g., adding 0.1 ten times might be 0.999... instead of 1).
+Be careful when comparing floating point numbers - there can be precision issues (e.g., adding 0.1 ten times might result in 0.999... instead of 1).
 
 ### `inf` and `nan`
 
@@ -91,7 +91,7 @@ Be careful when comparing floating point numbers - there can be precision issues
 
 Sometimes, the compiler will implictly convert types on our behalf. The compiler might generate a warning.
 
-We can explicitly convert types using the `static_cast` operator.
+We can also explicitly convert types using the `static_cast` operator.
 
 ```
 static_cast<new_type>(expression)

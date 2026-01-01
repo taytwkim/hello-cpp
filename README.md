@@ -22,4 +22,4 @@ For the most part, I'm following along this [tutorial](https://www.learncpp.com/
   * Signed and unsigned integers
   * Fixed-width integers (e.g., `std::int8_t`, `std::uint8_t`) and `size_t`
   * Floating point numbers and booleans
-  * Implicit and explicit type conversions (`static_cast`)
+  * Implicit and explicit type conversions (the `static_cast` operator)

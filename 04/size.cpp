@@ -3,7 +3,7 @@
 // Fixed-width Integers and size_t
 // Compile: clang++ size.cpp -o size
 
-#include <cstdint>    // for fixed-width integers
+#include <cstdint>              // for fixed-width integers
 #include <iostream>
 
 int main()

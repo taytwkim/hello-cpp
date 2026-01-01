@@ -8,7 +8,7 @@ First of all, it is important to remember that **C++ only guarantees that intege
 
 For example, an `int` has a minimum size of 16-bits, but it’s typically 32-bits on modern architectures. 
 
-But some systems may stil use 16-bit `int`. So if we write a program assuming that `int` is 32-bits, it may fail in systems where `int` is not 32-bits.
+But some systems may still rely on 16-bit `int`. So if we write a program assuming that `int` is 32-bits, it may fail in systems where `int` is not 32-bits.
 
 ```cpp
 #include <iostream>
@@ -54,21 +54,19 @@ int main()
 
 The fixed-width integers don’t define new types — they’re aliases for existing types with the required size.
 
-So `std::int32_t` is an alias for some existing type that is exactly 4 bytes on that platform. That underlying type could be `int`, `long`, or something else.
-
-So `std::int32_t` is really just saying: "use whatever type that is 4 bytes."
+So `std::int32_t` is an alias for some existing type that is exactly 4 bytes on that platform. That underlying type could be `int`, `long`, or something else. `std::int32_t` is really just saying: "use whatever type that is 4 bytes."
 
 Same idea for`std::int8_t`: since char-sized types are usually 8-bits, `std::int8_t`/`std::uint8_t` often end up as aliases of `signed char`/`unsigned char`, which is why they can behave like `char`.
 
-Also, if we use `std::int32_t` but the platform doesn’t have any integer type that’s exactly 32-bits wide, our code won’t compile.
+Also, if we use `std::int32_t` but the **platform doesn’t have any integer type that’s exactly 32-bits wide**, our code won’t compile.
 
 ## Fast and Least Integral Types
 
 ### Fast Types
 
-Systems might be faster in processing 64-bit integers than 32-bit integers (The CPU is optimized to process certain sizes faster).
+Systems might be faster at processing 64-bit integers than 32-bit integers (The CPU is optimized to process certain sizes faster).
 
-`std::int_fast32_t` will give you the fastest signed integer type that’s at least 32-bits.
+`std::int_fast32_t` will give you the fastest signed integer type that’s *at least* 32-bits.
 
 ### Least Types
 
@@ -76,11 +74,11 @@ The least types provide the smallest signed/unsigned integer type with a width o
 
 For example, `std::uint_least32_t` will give you the smallest unsigned integer type that’s at least 32-bits.
 
-This can help avoid the problem discussed above where a 32-bit type does not already exist in the system.
+This can help avoid the problem discussed above where a 32-bit type may not already exist in the system.
 
 ## `std::size_t`
 
-`std::size_t` stores the size of objects. The `sizeof` operator returns a `size_t`. `size_t` is defined in the header `<cstddef>`.
+`std::size_t` stores the size of objects. The `sizeof` operator returns a `size_t`. `size_t` is defined in `<cstddef>`.
 
 ```cpp
 #include <cstddef>    // for std::size_t

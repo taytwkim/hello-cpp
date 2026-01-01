@@ -17,7 +17,7 @@ int main()
 
     // Below, if we don't include the "f" suffix, the code will fail to compile.
     // This is because 5.0 is by default a double, so this line will try to convert a double to a float.
-    // But since list initialization is not allowed, the conversion will fail.
+    // But since list initialization does not allow narrowing conversions, the conversion will fail.
     // But float c = 5.0 will be fine.
 
     float c { 5.0f };   // 5.0 is a floating point literal, f suffix means float type
