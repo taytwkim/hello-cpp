@@ -6,6 +6,7 @@ For the most part, I'm following along this [tutorial](https://www.learncpp.com/
 
 ## Table of Contents
 * Chapter 0: Introduction / Getting Started
+  * Compiling your code
 * Chapter 1: C++ Basics
   * Hello world
   * IO stream (`std::cout`, `std::cin`)
@@ -23,3 +24,4 @@ For the most part, I'm following along this [tutorial](https://www.learncpp.com/
   * Fixed-width integers (e.g., `std::int8_t`, `std::uint8_t`) and `size_t`
   * Floating point numbers and booleans
   * Implicit and explicit type conversions (the `static_cast` operator)
+* Chapter 5: Constants and Strings
