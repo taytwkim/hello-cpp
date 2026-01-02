@@ -1,6 +1,6 @@
 // Chapter 5: Constants and Strings
-// Date: 2025-12-30
-// Constants, Numerals
+// Date: 2025-1-1
+// Constants and Numerals
 // Compile: clang++ main.cpp -o main
 
 #include <iostream>

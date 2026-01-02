@@ -17,7 +17,7 @@ For the most part, I'm following along this [tutorial](https://www.learncpp.com/
   * Preprocessors (macros)
   * Header files and header guards
 * Chapter 3: Debugging C++ Programs
-  * Using a debugger (LLDB)
+  * Using a debugger
 * Chapter 4: Fundamental Data Types
   * Object sizes and the `sizeof` operator
   * Signed and unsigned integers
@@ -25,3 +25,5 @@ For the most part, I'm following along this [tutorial](https://www.learncpp.com/
   * Floating point numbers and booleans
   * Implicit and explicit type conversions (the `static_cast` operator)
 * Chapter 5: Constants and Strings
+  * Constant objects (`const`) and numerals (binary, decimal, hexadecimal)
+  * Constant expressions (expressions that can be evaluated at compile time) and the `constexpr` keyword
