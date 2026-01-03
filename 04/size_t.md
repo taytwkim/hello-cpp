@@ -78,7 +78,9 @@ This can help avoid the problem discussed above where a 32-bit type may not alre
 
 ## `std::size_t`
 
-`std::size_t` stores the size of objects. The `sizeof` operator returns a `size_t`. `size_t` is defined in `<cstddef>`.
+`std::size_t` stores the size of objects. In a 64-bit machine, `sizeof(size_t)` is 8 bytes.
+
+The `sizeof` operator returns a `size_t`. `size_t` is defined in `<cstddef>`.
 
 ```cpp
 #include <cstddef>    // for std::size_t
