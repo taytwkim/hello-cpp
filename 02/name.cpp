@@ -28,12 +28,24 @@
  * 2. std namespace
  * 
  * When C++ was originally designed, all of the identifiers in the standard library were available without the std:: prefix.
- * This turned out to be a problem, because the users may want to declare conflicting identifiers, 
- * or code that worked previously might suddenly fail as new identifiers are introduced in the standard library.
+ * 
+ * This turned out to be a problem, because:
+ * 1. the users may want to declare conflicting identifiers, 
+ * 2. code that worked previously might suddenly fail as new identifiers are introduced in the standard library.
  * 
  * So C++ moved all of the functionality in the standard library into a namespace named std.
  * 
  * The std::cout prefix means "use cout in the std namespace".
+ * 
+ * Note about namespaces:
+ * 
+ * 1. `using namespace X` respects C++ scoping rules. 
+ *    Its effect is limited to the scope where it appears, so placing it in a smaller/local scope (e.g., inside a function) is generally safer than placing it at global/file scope (especially in headers).
+ * 
+ * 2. `using namespace X;` does not "overwrite" anything. It makes name lookup also consider names from namespace `X`. 
+ *    If there is no overlap (with existing names), this is usually fine.
+ *    If there is an overlap, the result may be ambiguous (compiler error) or resolved by the language's lookup/overload rules. 
+ *    Qualifying names explicitly (e.g., `std::...`) avoids these issues.
  */
 
 #include <iostream>
@@ -44,6 +56,7 @@ using namespace std;
 
 // However, "using" directive may not be preferable because it may lead to errors.
 // If the user tried to define a conflicting identifier, there will be errors.
+
 // If we uncomment this, there will be errors.
 
 // int cout() {
