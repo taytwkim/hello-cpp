@@ -49,19 +49,16 @@ void example2()
 
 int main()
 {
-    std::string x {};   // this is an empty string
+    std::string a {};     // this is an empty string
 
     std::string name { "Alice" };
-    name = "Bob";       // can be overwritten and can handle strings of varying length
+    name = "Bob";         // can be overwritten and can handle strings of varying length
     
     std::cout << "My name is: " << name << "\n";
     std::cout << "length: " << name.length() << "\n";
 
     // example1();
     example2();
-    
-    std::string a = "hello";
-    std::string b = a;  // here, a is copied to b, so this is a slow operation
 
     std::cout << "foo\n";   // by default, no suffix means a C-style string literal
     

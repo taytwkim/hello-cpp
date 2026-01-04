@@ -27,3 +27,4 @@ For the most part, I'm following along this [tutorial](https://www.learncpp.com/
 * Chapter 5: Constants and Strings
   * Constant objects (`const`) and numerals (binary, decimal, hexadecimal)
   * Constant expressions (expressions that can be evaluated at compile time) and the `constexpr` keyword
+  * Strings (`std::string` and `std::string_view`)
