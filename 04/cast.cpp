@@ -13,7 +13,8 @@ void print(int x)
 
 int main()
 {
-    print(5.5);                     // Warning: we're passing in a double value
-    print(static_cast<int>(5.5));   // We can explicitly convert the type   
+    print(5.5);                     // Warning: we're passing in a double value (will print 5 because the function takes in int as a parameter)
+    print(static_cast<int>(5.5));   // We can explicitly convert the type
+    print((int) 5.5);               // This is a C-style type casting, but prefer using static_cast in C++
     return 0;
 }
