@@ -9,7 +9,7 @@
 int getValue()
 {
     std::cout << "Enter an integer: ";
-    int x{};
+    int x {};
     std::cin >> x;
     return x;
 }
@@ -29,7 +29,7 @@ void example1()
 
     // Not guaranteed, but we might observe:
     // - clang evaluates arguments in left-to-right order. 
-    // - gcc compiler evaluates arguments in right-to-left order.
+    // - gcc evaluates arguments in right-to-left order.
 }
 
 void example2()
@@ -43,13 +43,15 @@ void example2()
 
 long long ipow(long long base, long long exp)
 {
-    /* integer exponentiation */
+    /* integer exponentiation - compute base ^ exp */
     long long res = 1;
+    
     while (exp > 0) {
         if (exp & 1) res *= base;
         base *= base;
         exp >>= 1;
     }
+    
     return res;
 }
 

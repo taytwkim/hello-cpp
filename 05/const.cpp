@@ -1,7 +1,7 @@
 // Chapter 5: Constants and Strings
 // Date: 2025-1-1
 // Constants and Numerals
-// Compile: clang++ main.cpp -o main
+// Compile: clang++ const.cpp -o const
 
 #include <iostream>
 

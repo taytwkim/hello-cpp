@@ -14,19 +14,27 @@ g++ main.cpp -o main
 
 `-o` sets the name of the output executable to `main`.
 
-On macOS, Clang is the default compiler, so `clang++` is the normal choice. 
+On macOS, Clang is the default compiler, so `clang++` is the normal choice. On macOS, `g++` may actually invoke Clang (the `g++` command can just be a wrapper for Clang), so it might not be “real GCC.”
 
-Also, on macOS, `g++` may actually invoke Clang (the `g++` command can just be a wrapper for Clang), so it might not be “real GCC.”
+If we want actual GCC’s `g++` on Mac, we can install GCC separately (via Homebrew), and then use a versioned command like `g++-15` (or whatever version we installed).
 
-If we want actual GCC’s `g++`, we can install GCC separately (via Homebrew), and then use a versioned command like `g++-15` (or whatever version we installed).
-
-Instead, we can use `c++`, which is the generic C++ compiler driver. It resolves to the system’s default C++ toolchain (so `clang++` on macOS). Sticking to `c++` is a nice way to keep scripts and Makefiles portable across machines.
+We can also use `c++`, which is the generic C++ compiler driver. It resolves to the system’s default C++ toolchain (so `clang++` on macOS). Sticking to `c++` is a nice way to keep scripts and Makefiles portable across machines.
 
 When we run `clang++` or `g++`, the command acts as a driver that typically runs the whole pipeline in order. 
 
 It preprocesses our source (`#include`, macros), compiles it, assembles it into an object file, and then links the object file with the required libraries to produce an executable.
 
 So the order is: preprocessor → compiler → assembler → linker.
+
+If we want to really take it step-by-step, we could do:
+
+```bash
+clang+ -c main.cpp -o main.o
+
+clang++ main.o -o app
+```
+
+Here, `-c` means compile (and assemble) only, don’t link. `-o` just sets the name of the output (whether an object file or an executable).
 
 ## 2. Choosing a Language Standard
 

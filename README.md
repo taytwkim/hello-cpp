@@ -29,4 +29,3 @@ For the most part, I'm following along this [tutorial](https://www.learncpp.com/
   * Constant expressions (expressions that can be evaluated at compile time) and the `constexpr` keyword
   * Strings (`std::string` and `std::string_view`)
 * Chapter 6: Operators
-  * 
