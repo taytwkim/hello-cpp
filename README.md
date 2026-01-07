@@ -27,5 +27,5 @@ For the most part, I'm following along this [tutorial](https://www.learncpp.com/
 * Chapter 5: Constants and Strings
   * Constant objects (`const`) and numerals (binary, decimal, hexadecimal)
   * Constant expressions (`constexpr`)
-  * Strings (`std::string` and `std::string_view`)
+  * Strings (`std::string`, `std::string_view`)
 * Chapter 6: Operators
