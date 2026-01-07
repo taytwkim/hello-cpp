@@ -1,7 +1,7 @@
 // Chapter 6: Operators
 // Date: 2025-1-5
-// Operators
-// Compile: clang++ main.cpp -o main
+// Exponentiation and Evaluation Order of Function Arguments
+// Compile: clang++ pow.cpp -o pow
 
 #include <cmath>        // for std::pow
 #include <iostream>

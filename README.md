@@ -14,7 +14,7 @@ For the most part, I'm following along this [tutorial](https://www.learncpp.com/
 * Chapter 2: C++ Basics: Functions and Files
   * Forward delcarations
   * Namespaces
-  * Preprocessors (`#include` and `#define`)
+  * Preprocessors (`#include`, `#define`)
   * Header files and header guards
 * Chapter 3: Debugging C++ Programs
   * Using a debugger
