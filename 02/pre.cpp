@@ -1,9 +1,11 @@
 // Chapter 2: C++ Basics: Functions and Files
 // Date: 2025-12-28
 // Preprocessors
-
 // Compile: clang++ pre.cpp -o pre
-// Print preprocessor output to stdout: clang++ -E pre.cpp
+
+// clang++ -E pre.c                 # print preprocessed output to terminal
+// clang++ -E pre.c -o pre.i        # save it to a file (the file should have .i extension)
+// clang++ -E -P pre.c -o pre.i     # like -E, but suppresses #line directives
 
 // Before compilation, each cpp file goes through preprocessing.
 // The preprocessor makes various changes to the code.
@@ -22,6 +24,7 @@
 
 // Preprocessors don't understand C++ syntax so it can be defined inside functions, 
 // but it is standard to declare at the top of the code and not inside any functions.
+
 #define MY_NAME "Tay"
 #define PRINT_A
 

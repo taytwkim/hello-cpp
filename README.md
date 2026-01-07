@@ -14,7 +14,7 @@ For the most part, I'm following along this [tutorial](https://www.learncpp.com/
 * Chapter 2: C++ Basics: Functions and Files
   * Forward delcarations
   * Namespaces
-  * Preprocessors (macros)
+  * Preprocessors (`#include` and `#define`)
   * Header files and header guards
 * Chapter 3: Debugging C++ Programs
   * Using a debugger
@@ -23,9 +23,9 @@ For the most part, I'm following along this [tutorial](https://www.learncpp.com/
   * Signed and unsigned integers
   * Fixed-width integers (e.g., `std::int8_t`, `std::uint8_t`) and `size_t`
   * Floating point numbers and booleans
-  * Implicit and explicit type conversions (the `static_cast` operator)
+  * Implicit and explicit type conversions (`static_cast`)
 * Chapter 5: Constants and Strings
   * Constant objects (`const`) and numerals (binary, decimal, hexadecimal)
-  * Constant expressions (expressions that can be evaluated at compile time) and the `constexpr` keyword
+  * Constant expressions (`constexpr`)
   * Strings (`std::string` and `std::string_view`)
 * Chapter 6: Operators
