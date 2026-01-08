@@ -6,8 +6,8 @@
 #include <iostream>
 
 /*
- * The comma opeator allows you to evaluate multiple expressions in a single expression.
- * The comma opeator evaluates the left operand, then the right operand, and then returns the result of the right operand.
+ * The comma operator allows you to evaluate multiple expressions in a single expression.
+ * The comma operator evaluates the left operand, then the right operand, and then returns the result of the right operand.
  * It's pretty much never used except maybe within for loops. 
  */
 

@@ -23,7 +23,7 @@ int main()
     x = 5;  // reset x to 5
     
     // Postfix increment works like this:
-    // First, the original value is copied to a temporary varible.
+    // First, the original value is copied to a temporary variable.
     // Then, x is incremented, and the copied (original) value is used to evaluate the expression.
     std::cout << x++ << '\n';
 
@@ -33,7 +33,7 @@ int main()
 
     x = 1;
     
-    // Again, C++ does not guarantee that function parameters will be evluated in order, so something like below has an undefined result.
+    // Again, C++ does not guarantee that function parameters will be evaluated in order, so something like below has an undefined result.
     // In clang, probably 1+2. In gcc, probably 2+2.
     std::cout << add(x, ++x) << '\n';   // might throw a warning
 

@@ -21,7 +21,7 @@
  * }
  * 
  * This code will throw an error, because there are two functions named myFcn, and the compiler/linker does not know how to resolve this symbol.
- * This is because by default, all functions are placed under the implictly-defined global namespace.
+ * This is because by default, all functions are placed under the implicitly-defined global namespace.
  * 
  * To avoid this conflict, we can use namespaces; two functions with the same name will not collide if declared under two different namespaces.
  * 

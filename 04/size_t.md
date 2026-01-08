@@ -4,7 +4,7 @@ I personally find fixed-width integers and `size_t` to be confusing, so I think 
 
 ## Fixed-width Integers
 
-First of all, it is important to remember that **C++ only guarantees that integer variables will have a minumum size**, but they could be larger depending on the target system.
+First of all, it is important to remember that **C++ only guarantees that integer variables will have a minimum size**, but they could be larger depending on the target system.
 
 For example, an `int` has a minimum size of 16-bits, but it’s typically 32-bits on modern architectures. 
 

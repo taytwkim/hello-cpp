@@ -1,6 +1,6 @@
 // Chapter 3: Debugging C++ Programs
 // Date: 2025-12-29
-// Printing Error Stataments
+// Printing Error Statements
 // Compile: clang++ debug.cpp -o debug
 
 #include <iostream>

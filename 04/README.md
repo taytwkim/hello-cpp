@@ -89,7 +89,7 @@ Be careful when comparing floating point numbers - there can be precision issues
 
 ### Implicit and Explicit Type Conversions
 
-Sometimes, the compiler will implictly convert types on our behalf. The compiler might generate a warning.
+Sometimes, the compiler will implicitly convert types on our behalf. The compiler might generate a warning.
 
 We can also explicitly convert types using the `static_cast` operator.
 

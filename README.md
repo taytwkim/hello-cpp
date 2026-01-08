@@ -12,7 +12,7 @@ For the most part, I'm following along this [tutorial](https://www.learncpp.com/
   * IO stream (`std::cout`, `std::cin`)
   * Initializing variables (e.g., direct initialization, list initialization, ...)
 * Chapter 2: C++ Basics: Functions and Files
-  * Forward delcarations
+  * Forward declarations
   * Namespaces
   * Preprocessors (`#include`, `#define`)
   * Header files and header guards
@@ -31,5 +31,5 @@ For the most part, I'm following along this [tutorial](https://www.learncpp.com/
 * Chapter 6: Operators
   * Exponentiation and evaluation order of function arguments
   * Increment/decrement operators (`x++` vs. `++x`)
-  * Comma opeator and the conditional operator (`c ? x : y`)
-  * Relational Operators (floating point comparisons)
+  * Comma operator and the conditional operator (`c ? x : y`)
+  * Relational operators (floating point comparisons)

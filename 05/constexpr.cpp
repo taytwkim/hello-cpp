@@ -48,7 +48,7 @@ int main()
     /* const vs. constexpr
      * 
      * const simply means that the value of an object cannot be changed after initialization. 
-     * We are not guaranteed that its value will be konwn at compile-time.
+     * We are not guaranteed that its value will be known at compile-time.
      * This can be a problem. Sometimes, it might not be straightforward whether 
      * a const variable's value will be known at compile-time, and thus can be used in a constant expression.
      * 
