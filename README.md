@@ -33,3 +33,5 @@ For the most part, I'm following along this [tutorial](https://www.learncpp.com/
   * Increment/decrement operators (`x++` vs. `++x`)
   * Comma operator and the conditional operator (`c ? x : y`)
   * Relational operators (floating point comparisons)
+* Chapter O (Optional)
+  * Bit Manipulation (`std::bitset`)
