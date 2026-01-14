@@ -1,20 +1,21 @@
 // Chapter O: Bit Manipulation
 // Date: 2025-01-12
-// Comma 
+// Bit Manipulation via a Bitset
 // Compile: clang++ bitset.cpp -o bit
 
 #include <iostream>
 #include <bitset>
 
 /* 
- * Why bitset could be useful.
+ * Bitsets
  *
  * In modern computer architecture, every object is byte-addressable, which means the min size of an object is a byte.
- * This means that even a boolean (which is 1 bit), takes up a whole byte, which is fine in most cases but is technically a waste of 7 bits.
- * So in some usecases, it might be helpful to pack bits into a byte and manipulate the individual bits. This is where we we can use "std::bitset".
+ * This means that even a boolean (which is 1 bit) takes up a whole byte, which is fine in most cases but is technically a waste of 7 bits.
+ * So in some cases, it might be helpful to pack bits into a byte and manipulate the individual bits. 
+ * This is where we we can use "std::bitset".
  * 
  * But note that the size of the bitset is rounded up to the size of size_t (64 bits in a 64-bit machine).
- * So a bitset of 8 bits does not mean we are using exactly 8 bits.
+ * So a bitset of x bits does not mean we are using exactly x bits.
  */
 
 int main()
@@ -48,7 +49,7 @@ int main()
     std::cout << new_bits.size() << " bits are in the bitset\n";
     std::cout << new_bits.count() << " bits are set to true\n";
 
-    std::cout << std::boolalpha;
+    std::cout << std::boolalpha;    // print true or false instead of 0 or 1
     std::cout << "All bits are true: " << new_bits.all() << '\n';
     std::cout << "Some bits are true: " << new_bits.any() << '\n';
     std::cout << "No bits are true: " << new_bits.none() << '\n';

@@ -35,3 +35,4 @@ For the most part, I'm following along this [tutorial](https://www.learncpp.com/
   * Relational operators (floating point comparisons)
 * Chapter O (Optional)
   * Bit Manipulation (`std::bitset`)
+  * Bitwise operators
