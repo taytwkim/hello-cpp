@@ -37,3 +37,4 @@ For the most part, I'm following along this [tutorial](https://www.learncpp.com/
   * Bit sets (`std::bitset`)
   * Bitwise operators
   * Bit masks
+  * Two's complement
