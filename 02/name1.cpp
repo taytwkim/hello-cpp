@@ -42,7 +42,7 @@
  * 1. `using namespace X` respects C++ scoping rules. 
  *    Its effect is limited to the scope where it appears, so placing it in a smaller/local scope (e.g., inside a function) is generally safer than placing it at global/file scope (especially in headers).
  * 
- * 2. `using namespace X;` does not "overwrite" anything. It makes name lookup also consider names from namespace `X`. 
+ * 2. `using namespace X;` does not "overwrite" anything. `using` is mostly used for convenience so we don't have to write `std::` every time.
  *    If there is no overlap (with existing names), this is usually fine.
  *    If there is an overlap, the result may be ambiguous (compiler error) or resolved by the language's lookup/overload rules. 
  *    Qualifying names explicitly (e.g., `std::...`) avoids these issues.

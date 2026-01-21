@@ -1,4 +1,4 @@
-# Fundamental Data Types
+# Chapter 4: Fundamental Data Types
 
 ## Code
 * `type.cpp`: The `typeof` operator.

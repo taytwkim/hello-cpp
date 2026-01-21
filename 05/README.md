@@ -1,4 +1,4 @@
-# Constants and Strings
+# Chapter 5: Constants and Strings
 
 * `const.cpp`: constants (`const`) and numerals (binary, decimal, hexadecimal)
 * `constexpr.cpp`: constant expressions (expressions whose values are known and thus can be evaluated at compile time)
