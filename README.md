@@ -41,4 +41,4 @@ For the most part, I'm following along this [tutorial](https://www.learncpp.com/
 * Chapter 7: Scope, Duration, and Linkage
   * Compound statements (blocks)
   * User-defined namespaces, the scope-resolution operator (`::`), nested namespaces, and namespace aliases
-  * Local variables
+  * Local and global variables
