@@ -21,7 +21,7 @@ namespace goo {
         return x - y;
     }
 
-    // use the scope resolution operator (::) without specifying the namespace to look into the GLOBAL namespace
+    // use the scope resolution operator (::) without specifying the namespace to look up the GLOBAL namespace
     int doSomething2(int x, int y) {
         return ::doSomething(x, y);
     }

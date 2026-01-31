@@ -34,6 +34,11 @@ int main()
     }
 
     // y cannot be used here!
+
+    {
+        int x {10};
+        std::cout << x << '\n'; // the value of x is 10, not 0 here. this is called "variable shadowing"
+    }
     
     return 0;
 }

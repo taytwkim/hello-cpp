@@ -4,4 +4,6 @@
 * `name1.cpp`: user-defined namespaces, the scope-resolution operator (`::`), nested namespaces, and namespace aliases
 * `name2/`: forward-declaration of content in namespaces
 * `name3/`: same namespace declared in multiple locations
-* `var.cpp`: local and global variables
+* `var.cpp`: local and global variables, variable shadowing
+* `intern.cpp`: internal linkage
+* `extern/`: external linkage
