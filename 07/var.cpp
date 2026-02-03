@@ -6,7 +6,7 @@
 #include <iostream>
 
 // global variables can be declared at the top of the file
-int g_x {}; // it is common to use the 'g_' prefix for global variables
+int g_x {};     // it is common to use the 'g_' prefix for global variables
 
 // Foo is defined in the global scope
 namespace Foo

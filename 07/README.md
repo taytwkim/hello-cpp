@@ -7,3 +7,5 @@
 * `var.cpp`: local and global variables, variable shadowing
 * `intern.cpp`: internal linkage
 * `extern/`: external linkage
+* `inline/`: inline functions and variables
+* `global/`: sharing global constants across multiple files
