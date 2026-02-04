@@ -45,3 +45,4 @@ For the most part, I'm following along this [tutorial](https://www.learncpp.com/
   * Internal (`static`) and external (`extern`) linkage
   * Inline (`inline`) functions and variable
   * Sharing global constants across multiple files
+  * The `static` keyword

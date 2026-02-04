@@ -30,6 +30,7 @@
  * static and inline seems to be similar in that they allow multiple definitions of a symbol.
  * However, how they work is conceptually different. static creates a private copy, while inline "shares" the same function.
  */
+
 #include <iostream>
 #include "hello.h"
 

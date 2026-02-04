@@ -16,9 +16,10 @@
  */
 
 static int g_x {0};     // we can give internal linkage using ths static keyword, accessible only in internal.cpp
-const int g_y {1};      // const and constexpr have internal linkage by default
+const int g_y {1};      // const and constexpr have internal linkage by default, so we don't need the static keyword
 constexpr int g_z {2};
 
+// functions have external linkage by default. we can use the static keyword to make it internal.
 static int add (int x, int y) {
     return x + y;
 }
