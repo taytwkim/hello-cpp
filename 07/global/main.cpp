@@ -6,7 +6,7 @@
 // We can use the inline to share global constants across files (C++17)
 
 #include <iostream>
-#include "constants.h"
+#include "constants.hpp"
 
 int main()
 {

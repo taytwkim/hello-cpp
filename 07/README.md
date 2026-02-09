@@ -9,4 +9,5 @@
 * `extern/`: external linkage
 * `inline/`: inline functions and variables
 * `global/`: sharing global constants across multiple files
-* `static.cpp`: understanding the `static` keyword.
+* `static.cpp`: understanding the `static` keyword
+* `using.cpp`: `using` directives and declarations

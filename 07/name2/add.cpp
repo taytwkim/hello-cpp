@@ -1,4 +1,4 @@
-#include "add.h"
+#include "add.hpp"
 
 // both the header file and the source file have to specify the namespace
 

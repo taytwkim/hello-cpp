@@ -32,7 +32,7 @@
  */
 
 #include <iostream>
-#include "hello.h"
+#include "hello.hpp"
 
 /* the same function is defined in a.cpp, but the compiler will not complain */
 inline int min(int x, int y)

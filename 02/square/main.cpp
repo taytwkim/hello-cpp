@@ -12,8 +12,8 @@
  * But sometimes it's necessary to include non-function definitions in a header file like custom types, so it's still good practice to use header guards.
  */
 
-#include "square.h"
-#include "wave.h"
+#include "square.hpp"
+#include "wave.hpp"
 
 int main() {
     return 0;

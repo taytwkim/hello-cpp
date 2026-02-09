@@ -15,7 +15,7 @@
  */
 
 #include <iostream>
-#include "add.h"
+#include "add.hpp"
 
 int main () {
     std::cout << "5 + 7 is " << add(5, 7) << std::endl;
