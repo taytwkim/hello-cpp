@@ -11,3 +11,4 @@
 * `global/`: sharing global constants across multiple files
 * `static.cpp`: understanding the `static` keyword
 * `using.cpp`: `using` directives and declarations
+* `name4/`: `unnamed` and `inline` namespaces 

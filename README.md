@@ -47,3 +47,4 @@ For the most part, I'm following along this [tutorial](https://www.learncpp.com/
   * Sharing global constants across multiple files
   * The `static` keyword
   * `using` directives vs. `using` declarations
+  * `unnamed` and `inline` namespaces
