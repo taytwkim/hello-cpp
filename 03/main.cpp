@@ -5,23 +5,27 @@
 
 #include <iostream>
 
-void print_value(int x) {
+void print_value(int x)
+{
     std::cout << x << "\n";
 }
 
-void a(){
-	std::cout << "a() called\n";
+void a()
+{
+    std::cout << "a() called\n";
 }
 
-void b(){
-	std::cout << "b() called\n";
-	a();
+void b()
+{
+    std::cout << "b() called\n";
+    a();
 }
 
-int main() {
+int main()
+{
     int x = 5;
     print_value(x);
-    
+
     // We can see the call stack in the debugger's call stack window
     a();
     b();

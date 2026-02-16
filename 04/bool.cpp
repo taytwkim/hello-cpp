@@ -17,9 +17,9 @@ int main()
     std::cout << false << '\n';
 
     // Turn off std::noboolalpha
-    std::cout << std::noboolalpha; 
+    std::cout << std::noboolalpha;
     std::cout << true << '\n';
     std::cout << false << '\n';
-    
+
     return 0;
 }

@@ -5,10 +5,11 @@
 
 #include <iostream>
 
-int main () {
+int main()
+{
     // A new line character is not needed here as user will press enter after input.
     std::cout << "Enter a number: ";
-    
+
     int x;
 
     // Like cout, cin is also buffered.

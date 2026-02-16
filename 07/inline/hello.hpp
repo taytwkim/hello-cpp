@@ -3,6 +3,9 @@
 
 #include <iostream>
 
-inline void hi() { std::cout << "Hello World" << '\n'; }
+inline void hi()
+{
+    std::cout << "Hello World" << '\n';
+}
 
 #endif

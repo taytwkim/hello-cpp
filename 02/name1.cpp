@@ -5,7 +5,7 @@
 /* 1. Naming collision
  *
  * Consider the following example.
- * 
+ *
  * // a.cpp
  * void myFcn(int x) {
  *    std::cout << x;
@@ -15,37 +15,44 @@
  * void myFcn(int x) {
  *    std::cout << 2 * x;
  * }
- * 
+ *
  * int main() {
  *    return 0;
  * }
- * 
- * This code will throw an error, because there are two functions named myFcn, and the compiler/linker does not know how to resolve this symbol.
- * This is because by default, all functions are placed under the implicitly-defined global namespace.
- * 
- * To avoid this conflict, we can use namespaces; two functions with the same name will not collide if declared under two different namespaces.
- * 
+ *
+ * This code will throw an error, because there are two functions named myFcn, and the
+ * compiler/linker does not know how to resolve this symbol. This is because by default, all
+ * functions are placed under the implicitly-defined global namespace.
+ *
+ * To avoid this conflict, we can use namespaces; two functions with the same name will not collide
+ * if declared under two different namespaces.
+ *
  * 2. std namespace
- * 
- * When C++ was originally designed, all of the identifiers in the standard library were available without the std:: prefix.
- * 
+ *
+ * When C++ was originally designed, all of the identifiers in the standard library were available
+ * without the std:: prefix.
+ *
  * This turned out to be a problem, because:
- * 1. the users may want to declare conflicting identifiers, 
- * 2. code that worked previously might suddenly fail as new identifiers are introduced in the standard library.
- * 
+ * 1. the users may want to declare conflicting identifiers,
+ * 2. code that worked previously might suddenly fail as new identifiers are introduced in the
+ * standard library.
+ *
  * So C++ moved all of the functionality in the standard library into a namespace named std.
- * 
+ *
  * The std::cout prefix means "use cout in the std namespace".
- * 
+ *
  * Note about namespaces:
- * 
- * 1. `using namespace X` respects C++ scoping rules. 
- *    Its effect is limited to the scope where it appears, so placing it in a smaller/local scope (e.g., inside a function) is generally safer than placing it at global/file scope (especially in headers).
- * 
- * 2. `using namespace X;` does not "overwrite" anything. `using` is mostly used for convenience so we don't have to write `std::` every time.
- *    If there is no overlap (with existing names), this is usually fine.
- *    If there is an overlap, the result may be ambiguous (compiler error) or resolved by the language's lookup/overload rules. 
- *    Qualifying names explicitly (e.g., `std::...`) avoids these issues.
+ *
+ * 1. `using namespace X` respects C++ scoping rules.
+ *    Its effect is limited to the scope where it appears, so placing it in a smaller/local scope
+ * (e.g., inside a function) is generally safer than placing it at global/file scope (especially in
+ * headers).
+ *
+ * 2. `using namespace X;` does not "overwrite" anything. `using` is mostly used for convenience so
+ * we don't have to write `std::` every time. If there is no overlap (with existing names), this is
+ * usually fine. If there is an overlap, the result may be ambiguous (compiler error) or resolved by
+ * the language's lookup/overload rules. Qualifying names explicitly (e.g., `std::...`) avoids these
+ * issues.
  */
 
 #include <iostream>
@@ -63,7 +70,8 @@ using namespace std;
 //     return 5;
 // }
 
-int main() {
+int main()
+{
     cout << "Hello World!\n";
     return 0;
 }

@@ -10,12 +10,13 @@
 
 #include <iostream>
 
-void sayHi();         // forward declaration of a function named sayHi defined somewhere else
-extern int g_x;       // forward declaration of a variable named g_x defined somewhere else
-extern const int g_y; // forward declaration of a const variable named g_y defined somewhere
+void sayHi();          // forward declaration of a function named sayHi defined somewhere else
+extern int g_x;        // forward declaration of a variable named g_x defined somewhere else
+extern const int g_y;  // forward declaration of a const variable named g_y defined somewhere
 
-int main() {
+int main()
+{
     sayHi();
-    std::cout << g_x << ", " << g_y << '\n';   
+    std::cout << g_x << ", " << g_y << '\n';
     return 0;
 }

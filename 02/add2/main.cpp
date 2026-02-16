@@ -5,10 +5,12 @@
 
 #include <iostream>
 
-// This function is defined in a different file, but we still need to declare it here in order to use it.
+// This function is defined in a different file, but we still need to declare it here in order to
+// use it.
 int add(int x, int y);
 
-int main() {
+int main()
+{
     std::cout << "The sum of 5 and 7 is " << add(5, 7) << std::endl;
     return 0;
 }

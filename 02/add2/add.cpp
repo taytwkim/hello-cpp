@@ -2,6 +2,7 @@
 // Date: 2025-12-28
 // Using Multiple Files
 
-int add(int x, int y) {
+int add(int x, int y)
+{
     return x + y;
 }

@@ -7,24 +7,29 @@
 
 /*
  * An identifier with an internal linkage is only available within the source file.
- * If two source files have identically named identifiers with internal linkage, the linker will not complain for naming collision.
- * 
+ * If two source files have identically named identifiers with internal linkage, the linker will not
+ * complain for naming collision.
+ *
  * Internal linkage is used:
- * 
+ *
  * 1. when we don't want the identifier to be accessible from the outside.
  * 2. when we don't want naming collision across different src files.
  */
 
-static int g_x {0};     // we can give internal linkage using ths static keyword, accessible only in internal.cpp
-const int g_y {1};      // const and constexpr have internal linkage by default, so we don't need the static keyword
-constexpr int g_z {2};
+static int g_x{
+    0};  // we can give internal linkage using ths static keyword, accessible only in internal.cpp
+const int g_y{1};  // const and constexpr have internal linkage by default, so we don't need the
+                   // static keyword
+constexpr int g_z{2};
 
 // functions have external linkage by default. we can use the static keyword to make it internal.
-static int add (int x, int y) {
+static int add(int x, int y)
+{
     return x + y;
 }
 
-int main () {
-     std::cout << "Hello World!" << '\n';
-     return 0;
+int main()
+{
+    std::cout << "Hello World!" << '\n';
+    return 0;
 }

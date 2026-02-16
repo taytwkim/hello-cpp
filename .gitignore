@@ -44,3 +44,5 @@
 # Mac and vscode
 .DS_Store
 .vscode/
+
+.clang-format
