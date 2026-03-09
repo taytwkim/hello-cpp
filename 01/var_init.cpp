@@ -25,8 +25,13 @@ int main()
     // Direct initialization
     // Direct initialization was initially introduced to allow for more efficient initialization of
     // complex objects. Direct initialization had fallen out of favor in modern C++, largely due to
-    // being superseded by direct-list-initialization.
+    // being superseded by list-initialization.
     int c(6);
+
+    // But be careful when using direct initialization.
+    // for non-primitive types, using () can be thought of as using a constructor for that type. For
+    // instance, the line below initializes three 9s, not 3 and 9.
+    std::vector<int> a(3, 9);
 
     // ===== Modern initialization forms =====
 
@@ -39,6 +44,14 @@ int main()
     // List initialization also provides a way to initialize objects with a list of values rather
     // than a single value.
     std::vector<int> e{3, 7};  // [3, 7]
+
+    // It is also common to use list initialization for initializing structs
+    struct Point {
+        int x;
+        int y;
+    };
+
+    Point p{1, 2};
 
     // Value initialization (C++11 and later)
     int f{};  // initialized to zero instead of indeterminate value.
