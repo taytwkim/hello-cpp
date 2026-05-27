@@ -4,47 +4,4 @@ I'm trying to learn C++.
 
 For the most part, I'm following along this [tutorial](https://www.learncpp.com/).
 
-## Table of Contents
-* Chapter 0: Introduction / Getting Started
-  * Compiling your code
-* Chapter 1: C++ Basics
-  * Hello world
-  * IO stream (`std::cout`, `std::cin`)
-  * Initializing variables (e.g., direct initialization, list initialization, ...)
-* Chapter 2: C++ Basics: Functions and Files
-  * Forward declarations
-  * Namespaces
-  * Preprocessors (`#include`, `#define`)
-  * Header files and header guards
-* Chapter 3: Debugging C++ Programs
-  * Using a debugger
-* Chapter 4: Fundamental Data Types
-  * Object sizes and the `sizeof` operator
-  * Signed and unsigned integers
-  * Fixed-width integers (e.g., `std::int8_t`, `std::uint8_t`) and `size_t`
-  * Floating point numbers and booleans
-  * Implicit and explicit type conversions (`static_cast`)
-* Chapter 5: Constants and Strings
-  * Constant objects (`const`) and numerals (binary, decimal, hexadecimal)
-  * Constant expressions (`constexpr`)
-  * Strings (`std::string`, `std::string_view`)
-* Chapter 6: Operators
-  * Exponentiation and evaluation order of function arguments
-  * Increment/decrement operators (`x++` vs. `++x`)
-  * Comma operator and the conditional operator (`c ? x : y`)
-  * Relational operators (floating point comparisons)
-* Chapter O (Optional): Bit Manipulation
-  * Bit sets (`std::bitset`)
-  * Bitwise operators
-  * Bit masks
-  * Two's complement
-* Chapter 7: Scope, Duration, and Linkage
-  * Compound statements (blocks)
-  * User-defined namespaces, the scope-resolution operator (`::`), nested namespaces, and namespace aliases
-  * Local and global variables
-  * Internal (`static`) and external (`extern`) linkage
-  * Inline (`inline`) functions and variable
-  * Sharing global constants across multiple files
-  * The `static` keyword
-  * `using` directives vs. `using` declarations
-  * `unnamed` and `inline` namespaces
+See `table.md` for the table of contents.
